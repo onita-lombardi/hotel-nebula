@@ -22,3 +22,11 @@ Implementação física do banco relacional.
 [Inserção dos dados](./SQL/inserir_dados.sql)
 
 [Documentação da estrutura](./partes/parte2.md)
+
+## Parte 3: Radar de Comando
+
+Consultas SQL e extração de dados
+
+[Consultas](./partes/parte3.md)
+
+[Arquivo sql consultas](./SQL/consultas.sql)

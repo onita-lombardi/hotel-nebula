@@ -26,9 +26,11 @@ VALUES ('Frederico Santos', 'Recepcionista', '111.222.333-44', '(11)96666-1111',
 
 -- reservas
 INSERT INTO reservas(id_hospede, id_quarto, data_checkin, data_checkout, valor_orcamento, status_reserva)
-VALUES (1, 1, '2026-06-01', '2026-06-05', 1000.00, 'Confirmada'),
+VALUES (1, 1, '2026-06-01', '2026-06-05', 1000.00, 'Pendente'),
+	   (1, 1, '2026-09-16', '2026-09-20', 1000.00, 'Confirmada'),
 	   (2, 2, '2026-06-10', '2026-06-15', 2250.00, 'Finalizada'),
-	   (3, 3, '2026-07-01', '2026-07-07', 5950.00, 'Pendente');
+	   (3, 3, '2026-07-01', '2026-07-07', 5950.00, 'Pendente'),
+       (3, 3, '2026-10-01', '2026-10-07', 5950.00, 'Cancelada');
 
 -- hospedagens
 INSERT INTO hospedagens(id_reserva, checkin_real, checkout_real)
@@ -51,5 +53,7 @@ VALUES (1, 5, 'Excelente atendimento e quarto muito confortavel.'),
 -- servicos_realizados
 INSERT INTO servicos_realizados(id_hospedagem, id_servico, id_funcionario, data_realizado, valor)
 VALUES (1, 1, 2, '2026-06-02', 50.00),
+	   (1, 3, 2, '2026-06-02', 40.00),
 	   (1, 2, 1, '2026-06-03', 80.00),
 	   (2, 3, 2, '2026-06-11', 40.00);
+       
